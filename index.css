@@ -103,3 +103,84 @@ i:hover {
   background: rgba(128, 128, 128, 0.527);
   border-radius: 50%;
 }
+
+/* Shopping cart*/
+
+#shopping-cart {
+  margin-top: 30px;
+  width: 508px;
+}
+.title {
+  text-align: center;
+}
+
+.cart {
+  display: flex;
+  align-items: end;
+}
+.cart-item {
+  font-family: "Smythe";
+  margin: 10px;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.cart-remove {
+  font-family: Verdana;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.price {
+  font-family: "Smythe";
+  margin-left: auto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+
+.total-card {
+  display: flex;
+}
+.total-name {
+  margin: 10px;
+  font-family: Smythe;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.total-price {
+  font-family: Smythe;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: right;
+  margin-left: auto;
+  margin-top: 10px;
+}
+
+.purchase-btn {
+  margin: 30px 0;
+  width: 508px;
+  height: 60px;
+  padding: 18px, 175px, 18px, 194px;
+  border-radius: 3px;
+  background: #16db99;
+  font-family: Verdana;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: white;
+}
