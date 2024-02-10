@@ -8,8 +8,8 @@ document.addEventListener("click", (event) => {
   if (event.target.id == "add-item") {
     addItemToCart(event.target.parentElement.id);
   } else if (event.target.id == "remove-item") {
-    console.log(event.target.parentElement.id);
     removeItemFromCart(event.target.parentElement.id);
+  } else if (event.target.id === "purchase-btn") {
   }
 });
 

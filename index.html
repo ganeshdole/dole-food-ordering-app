@@ -1,11 +1,16 @@
+<!-- HTML -->
+<!DOCTYPE html>
 <html>
   <head>
+    <!-- External CSS libraries -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     />
+    <!-- Preconnect to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Importing custom fonts and Font Awesome icons -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,700&family=Smythe&display=swap"
       rel="stylesheet"
@@ -14,23 +19,28 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <!-- Linking custom CSS file -->
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <!-- Header section -->
     <header>
       <h1>Dole's Diner</h1>
       <p>The best burgers and pizzas in town.</p>
     </header>
+    <!-- Main content section -->
     <main>
       <div id="container"></div>
       <div>
+        <!-- Title and shopping cart section -->
         <p class="title hidden" id="title">Your Order</p>
         <div>
           <div id="shopping-cart"></div>
-          <div id="total-cart" class="display-flex">
+          <div id="total-cart" class="display-flex"></div>
         </div>
       </div>
     </main>
+    <!-- JavaScript file import -->
     <script src="index.js" type="module"></script>
   </body>
 </html>

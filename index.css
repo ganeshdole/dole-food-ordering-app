@@ -40,7 +40,6 @@ main {
   justify-content: space-evenly;
   background-color: honeydew;
 }
-
 /* Util class */
 .display-flex {
   display: flex;
