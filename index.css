@@ -125,6 +125,7 @@ i:hover {
 .title {
   margin-top: 30px;
   text-align: center;
+  font-size: 32px;
 }
 
 .cart {
@@ -199,4 +200,37 @@ i:hover {
   font-weight: 700;
   line-height: 24px;
   color: white;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  background: red;
+  width: 524px;
+  height: 542.24px;
+  border-radius: 3.89px;
+  border: 1.3px;
+  border: 1.3px solid #757575;
+}
+
+.input {
+  margin: auto;
+  width: 475.91px;
+  height: 71.3px;
+}
+
+.green {
+  background: #16db99;
+}
+.white {
+  background: white;
+}
+.display-none {
+  display: none;
 }
