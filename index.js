@@ -4,6 +4,7 @@ const container = document.getElementById("container");
 const shoppingCart = document.getElementById("shopping-cart");
 const totalCart = document.getElementById("total-cart");
 const purchaseCard = document.getElementById("purchase-card");
+const formEl = document.getElementById("card-info");
 
 // Array to store items in the shopping cart
 let cartItem = [];
@@ -20,10 +21,26 @@ document.addEventListener("click", (event) => {
   }
   // Handling click on "purchase-btn" button (placeholder for future functionality)
   else if (event.target.id === "purchase-btn") {
-    renderPurchaseCard();
+    formEl.classList.remove("hide");
+    // renderPurchaseCard();
   } else if (event.target.id === "pay") {
-    renderThankYou();
+    // renderThankYou();
   }
+});
+
+// Use this instead of renderThankYou()
+formEl.addEventListener("submit", function (e) {
+  e.preventDefault();
+  const name = document.getElementById("fname").value;
+  document.getElementById("card-info").classList.add("display-none");
+  cartItem = [];
+  shoppingCart.innerHTML = `<p class="title green">Thanks, ${name}! Your order is on its way!</p>`;
+  if (cartItem.length != 0) {
+    document.getElementById("title").classList.remove("hidden");
+  } else {
+    document.getElementById("title").classList.add("hidden");
+  }
+  totalCart.innerHTML = renderTotal();
 });
 
 // Function to add an item to the shopping cart
@@ -84,16 +101,19 @@ function removeItemFromCart(id) {
 
 //Function for render purchase card Info
 function renderPurchaseCard() {
-  purchaseCard.innerHTML = `<div class="card-info white" id="card-info">
+  purchaseCard.innerHTML = `<form class="card-info white" id="card-info">
   <p class="title">Enter card details</p>
   <input type="text" id="fname" name="fname" placeholder="Enter your name" class="input" id="fname" required>
   <input type="text" id="lname" name="lname" placeholder="Enter card number" class="input" required>
   <input type="text" id="lname" name="lname" placeholder="Enter CVV" class="input" required>
-  <input type="submit" value="Pay" class="input green" id="pay">
-  </div>`;
+  <button type="submit" class="input green" id="pay">Pay<button/>
+  </form>`;
 }
+
 // Function Render Thankyou Message
-function renderThankYou() {
+function renderThankYou(e) {
+  e.preventDefault();
+
   const name = document.getElementById("fname").value;
   document.getElementById("card-info").classList.add("display-none");
   cartItem = [];

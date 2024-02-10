@@ -234,3 +234,7 @@ i:hover {
 .display-none {
   display: none;
 }
+
+.hide {
+  display: none;
+}

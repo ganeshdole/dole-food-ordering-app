@@ -39,7 +39,15 @@
           <div id="total-cart" class="display-flex"></div>
         </div>
       </div>
-      <div class="purchase-card" id="purchase-card"></div>
+      <!-- <div class="purchase-card" id="purchase-card"> </div> -->
+        <form class="card-info hide white" id="card-info">
+          <p class="title">Enter card details</p>
+          <input type="text" id="fname" name="fname" placeholder="Enter your name" class="input" id="fname" required>
+          <input type="text" id="lname" name="lname" placeholder="Enter card number" class="input" required>
+          <input type="text" id="lname" name="lname" placeholder="Enter CVV" class="input" required>
+          <button type="submit" class="input green" id="pay">Pay<button/>
+        </form>
+      
     </main>
     <!-- JavaScript file import -->
     <script src="index.js" type="module"></script>
