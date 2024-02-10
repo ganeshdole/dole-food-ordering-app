@@ -144,6 +144,8 @@ i:hover {
 }
 
 .cart-remove {
+  background: none;
+  border: none;
   font-family: Verdana;
   font-size: 12px;
   font-weight: 400;
